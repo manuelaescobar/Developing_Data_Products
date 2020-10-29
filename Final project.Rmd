@@ -1,0 +1,45 @@
+---
+title: "Final project - Developing Data Products. Course 9 of Data Science in Coursera"
+author: "Manuela Escobar"
+date: "October/29/2020"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Instructions
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+## Data election
+I selected the infert data available in R, it relates to infertility after Spontaneous and Induced Abortion
+```{r echo=TRUE}
+head(infert)
+dim(infert)
+class(infert)
+```
+
+## Exploratory analysis of my data
+The data set contains 8 variables -i.e., education, age, parity, induced, case, spontaneous, stratum, pooled.stratum-. I will include age, parities, induced, and spontaneous in my plot. 
+
+```{r cars, echo = TRUE}
+summary(infert)
+```
+
+## Interactive plot of my data
+
+I create an interactive plot and predict parities based on woman age.
+
+If you want to use, you may:
+- Open the link below
+- Slide the woman age for what you want to see the predictions 
+- Select in the check box the prediction that you want to see, "Number of predicted parities" or "Number of predicted induced and spontaneous abortions"
+- Now you can view the predictions!
+
+In the following link you can find my interactive plot: https://manuelaescobar.shinyapps.io/FinalProject/
+
+And, in this the source code: 
+https://github.com/manuelaescobar/Developing_Data_Products
